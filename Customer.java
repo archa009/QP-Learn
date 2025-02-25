@@ -13,16 +13,8 @@ public class Customer {
         return name;
     }
 
-    public void setName(java.lang.String name) {
-        this.name = name;
-    }
-
     public java.lang.String getType() {
         return type;
-    }
-
-    public void setType(java.lang.String type) {
-        this.type = type;
     }
 
     public double getDiscount() {
@@ -30,7 +22,7 @@ public class Customer {
     }
 
     private void setDiscount() {
-        CustomerTypeEnum customerType = CustomerTypeEnum.getAll().
+        CustomerTypeEnum customerType = CustomerTypeEnum.getAll();
         for (CustomerTypeEnum customType : CustomerTypeEnum.values()) {
             if (type == customType.getType()) {
                 discount = customType.getDiscount();
