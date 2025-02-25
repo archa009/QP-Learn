@@ -29,10 +29,6 @@ public class Customer {
         return discount;
     }
 
-    public void setDiscount(double discount) {
-        this.discount = discount;
-    }
-
     private void setDiscount() {
         CustomerTypeEnum customerType = CustomerTypeEnum.getAll().
         for (CustomerTypeEnum customType : CustomerTypeEnum.values()) {
